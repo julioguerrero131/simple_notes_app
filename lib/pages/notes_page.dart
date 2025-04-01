@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:simple_notes_app/components/drawer.dart';
 import 'package:simple_notes_app/modules/note.dart';
 import 'package:simple_notes_app/modules/note_database.dart';
 
@@ -107,7 +108,7 @@ class _NotesPageState extends State<NotesPage> {
         onPressed: createNote,
         child: const Icon(Icons.add),
       ),
-      drawer: Drawer(),
+      drawer: const MyDrawer(),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
